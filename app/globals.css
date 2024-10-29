@@ -19,3 +19,33 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+.gradient-text {
+  background: linear-gradient(90.34deg, #0D0ED6 2.53%, #A171D0 39.19%, #FF7365 98.5%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* For Safari */
+  background-clip: text; /* For other browsers */
+}
+
+
+
+@keyframes marquee {
+  100% {
+      transform: translateX(-100%); 
+  }
+  0% {
+      transform: translateX(100%); 
+  }
+}
+
+.animate-marquee {
+  display: inline-block; 
+  animation: marquee 20s linear infinite; 
+}
+
+
+.sticky-box {
+  background: linear-gradient(85.91deg, rgba(255, 115, 101, 0.12) 3.26%, rgba(161, 113, 208, 0.12) 56.9%, rgba(13, 14, 214, 0.12) 94.95%);
+
+}
